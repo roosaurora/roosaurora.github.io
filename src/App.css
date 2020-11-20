@@ -1,0 +1,339 @@
+.App {
+  text-align: center;
+}
+
+.html,
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  font-size: 8px;
+}
+
+.Compass-menu {
+  position: sticky;
+  background-color: #282c34;
+  top: 0;
+  display: inline-flex;
+  vertical-align: top;
+  width: 100%;
+  color: white;
+}
+
+.Compass-link {
+  font-size: 10px;
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.Compass-link.hidden {
+  display: none;
+}
+
+.Nav-menu li {
+  list-style-type: none;
+}
+
+.Compass-link:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #cbcba9;
+}
+
+.Compass-horizontal-container {
+  width: 46%;
+  position: relative;
+}
+
+.Compass-vertical-container {
+  width: 8%;
+  margin: 0 auto;
+}
+
+.Compass-mobile-container {
+  display: none;
+}
+
+.Compass-horizontal-container a {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.Compass-horizontal-container.left {
+  text-align: end;
+  padding-right: 50px;
+}
+
+.Compass-horizontal-container.right {
+  text-align: start;
+}
+
+.Compass-menu img {
+  width: 100%;
+}
+
+.App-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Header-parallax {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("./images/kansi.JPG");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  position: relative;
+}
+
+.Header-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: block;
+}
+
+.Scratch-title {
+  text-decoration: line-through;
+  padding-right: 5vm;
+}
+
+.Content-parallax {
+  width: 100%;
+  height: 60vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  position: relative;
+}
+
+.Content-text {
+  text-align: center;
+}
+
+.Analyse {
+  background-image: url("./images/laiva2.jpg");
+}
+
+/* .Content-parallax.Analyse h1 {
+  color: #282c34;
+} */
+
+.Section-wrapper {
+  text-align: center;
+}
+
+.Section-wrapper iframe {
+  width: 50%;
+  height: 60vh;
+}
+
+.Image {
+  margin-right: 2vh;
+  margin-left: 2vh;
+}
+
+.Image.right {
+  float: right;
+}
+
+.Image.left {
+  float: left;
+}
+
+.Image.full {
+  width: 80vh;
+}
+
+.Image.medium {
+  width: 50vh;
+}
+
+.Image.small {
+  width: 30vh;
+}
+
+.Ideate {
+  background-image: url("./images/ruskajärvi.JPG");
+}
+
+.Build {
+  background-image: url("./images/lumi.JPG");
+}
+
+.Evaluate {
+  background-image: url("./images/havumetsä.JPG");
+}
+
+.Content-wrapper {
+  text-align: center;
+}
+
+.Content-wrapper h2 {
+  padding-top: 15%;
+}
+
+.Content-wrapper h4 {
+  text-align: left;
+}
+
+.Content-parallax h1,
+.Content-parallax h2 {
+  position: absolute;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.Content-wrapper p {
+  text-align: justify;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Hidden-text {
+    animation: Fade-out 7s infinite;
+  }
+  .Fixed-text {
+    animation: Fade-in 7s infinite;
+  }
+}
+
+/* Smaller screens  */
+@media only screen and (max-device-width: 480px) {
+  .Parallax {
+    background-attachment: scroll;
+  }
+  .Content-wrapper {
+    text-align: justify;
+    padding: 3vh;
+  }
+
+  .Content-wrapper h2 {
+    text-align: left;
+  }
+
+  .Image {
+    margin-bottom: 2vh;
+    margin-left: 0vh;
+    margin-right: 0vh;
+  }
+
+  .Image.small {
+    width: 100%;
+  }
+  .Image.full {
+    width: 100%;
+  }
+
+  .Image.right, .Image.left {
+    float: none; 
+  }
+
+  .Section-wrapper iframe {
+    width: 100%;
+    height: 30vh;
+  }
+
+  .Compass-horizontal-container {
+    display: none;
+  }
+
+  .Compass-vertical-container .Compass-link {
+    display: none;
+  }
+
+  .Compass-mobile-container {
+    margin-top: 2.5vh;
+  }
+
+  .Compass-mobile-container a {
+    padding-right: 2vh;
+  }
+
+  .Compass-mobile-container.left {
+    display: inline-flex;
+    margin-left: 4vh;
+  }
+  .Compass-mobile-container.right {
+    display: inline-flex;
+    margin-right: 4vh;
+    margin-left: 2vh;
+  }
+
+  .Compass-vertical-container {
+    width: inherit;
+  }
+}
+
+/* Laptop only */
+@media only screen and (min-width: 480px) {
+  .Content-wrapper {
+    text-align: justify;
+    padding: 5vh 25vh;
+  }
+}
+
+@keyframes Fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes Fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
